@@ -1,0 +1,83 @@
+body {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+section {
+    width: 80%;
+   margin: auto;
+}
+.generic {
+    list-style-type: none;
+    background: #2B2B2B;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.generic > li {
+    display: inline-block;/*raspolojit' bloki li drug za drugom*/
+}
+.generic > li > a {/*nastraivayu isobrajenie ssylok na glavnoy paneli*/
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 48px;
+}
+.generic li:hover > a {/*kak vedut sebya ssylki gl. paneli pri navedinii*/
+    background-color: #C9C9D5;
+    color: black;
+}
+/*nachinaem obrabatyvat' pervyy vypadauchiy spisok*/
+.generic li ul {
+    list-style-type: none;
+    position: absolute;
+    background-color: #2B2B2B;
+    margin: 0;
+    padding: 0;
+    display: none;
+
+}
+.generic > li > ul > li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 86px 16px 10px;
+}
+
+.generic > li:nth-child(2):hover > ul {
+    display: block;
+}
+.generic > li > ul > li > ul {
+    left: 132px;
+    top: 200px;
+}
+.generic > li > ul > li:nth-child(5):hover > ul {
+    display: block;
+}
+/*nastrauvayu tablicu dannych*/
+div {
+    padding-top: 100px;
+}
+table {
+    width: 100%;
+}
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table td {
+    padding: 8px 4px;
+}
+table thead  th {
+    padding: 10px 0;
+    background-color: #D3D4DF;
+}
+table tfoot{
+    font-weight: bold;
+}
+table tfoot td:last-child {
+    text-align: right;
+}
+table tbody tr:nth-child(even) {
+    background-color: #ECEDF8;
+}
